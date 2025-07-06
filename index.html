@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, minimum-scale=1">
+  <title>Image2PDF Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <span class="logo-icon">🖼️</span>
+        <span class="logo-text">Image2PDF Converter</span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Konversi Gambar ke PDF</h1>
+      <p>Ubah gambar JPG, PNG, JPEG, BMP, atau GIF Anda menjadi file PDF berkualitas tinggi secara instan dan mudah. Tidak perlu instalasi, cukup upload dan download hasilnya!</p>
+      <div class="upload-area" id="upload-area">
+        <div class="upload-icon">⬆️</div>
+        <p>Tarik & lepas gambar di sini atau klik untuk memilih file</p>
+        <input type="file" id="file-input" accept="image/*" multiple hidden>
+      </div>
+      <div id="preview" class="preview"></div>
+      <button id="convert-btn" class="convert-btn" disabled>Konversi ke PDF</button>
+    </section>
+    <section class="steps">
+      <h2>Bagaimana cara mengkonversi gambar ke PDF?</h2>
+      <div class="steps-cards">
+        <div class="step-card">
+          <div class="step-icon">⬆️</div>
+          <h3>Unggah File Gambar</h3>
+          <p>Unggah atau seret & jatuhkan gambar ke atas</p>
+        </div>
+        <div class="step-card">
+          <div class="step-icon">🔄</div>
+          <h3>Proses Konversi</h3>
+          <p>Gambar Anda akan otomatis dikonversi ke PDF</p>
+        </div>
+        <div class="step-card">
+          <div class="step-icon">📥</div>
+          <h3>Download PDF</h3>
+          <p>Unduh file PDF hasil konversi ke perangkat Anda</p>
+        </div>
+      </div>
+    </section>
+    <section class="features">
+      <h2>Mengapa Image2PDF Converter?</h2>
+      <div class="features-row">
+        <div class="features-col card-content">
+          <img src="https://img.icons8.com/color/48/000000/image.png" alt="Gambar" class="features-img-icon feature-icon-mobile"/>
+          <h3>Konversi Otomatis & Cepat</h3>
+          <p>Proses konversi gambar ke PDF berlangsung otomatis dan hanya butuh beberapa detik, tanpa perlu instalasi software tambahan.</p>
+        </div>
+        <div class="features-col center desktop-only">
+          <img src="https://img.icons8.com/color/48/000000/image.png" alt="Gambar" class="features-img-icon"/>
+        </div>
+      </div>
+      <div class="features-row">
+        <div class="features-col card-content">
+          <span class="icon-left-outer feature-icon-mobile">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 13L17 3M7 13H13L11 21L17 11H11L13 3" stroke="#7c3aed" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <h3>Kualitas Gambar Terjaga</h3>
+          <p>File PDF yang dihasilkan tetap menjaga kualitas gambar asli sehingga hasil tetap jelas dan profesional.</p>
+        </div>
+        <div class="features-col center desktop-only">
+          <span class="icon-left-outer">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 13L17 3M7 13H13L11 21L17 11H11L13 3" stroke="#7c3aed" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div class="features-row">
+        <div class="features-col card-content">
+          <img src="https://img.icons8.com/color/48/000000/downloads-folder.png" alt="Download" class="features-img-icon feature-icon-mobile"/>
+          <h3>Download Instan</h3>
+          <p>Setelah proses selesai, file PDF langsung bisa diunduh tanpa menunggu lama.</p>
+        </div>
+        <div class="features-col center desktop-only">
+          <img src="https://img.icons8.com/color/48/000000/downloads-folder.png" alt="Download" class="features-img-icon"/>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html> 
